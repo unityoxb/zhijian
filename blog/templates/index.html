@@ -8,7 +8,7 @@
       {% for blog in lists_star %}
         <li><i>
           <a href="/">
-          <img src="{% static "blog/" %}{{blog.image}}">
+          <img src="{{blog.image.url}}">
         </a></i>
           <span>{{blog.title}}</span>
         </li>
@@ -52,7 +52,7 @@
                   <div class="bloginfo">
                     <span class="blogpic">
                       <a href="/" title="">
-                        <img src="/static/blog/images/t01.jpg"  />
+                        <img src="{{blog.image.url}}"  />
                       </a>
                       </span>
                     <p>{{ blog.body }}</p>

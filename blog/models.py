@@ -36,7 +36,7 @@ class Post(models.Model):
         default='normal',
         verbose_name='类型'
         )
-    image = models.ImageField(upload_to='upload/', 
+    image = models.ImageField(upload_to='upload', 
         verbose_name='图片', 
         null=True)
 
